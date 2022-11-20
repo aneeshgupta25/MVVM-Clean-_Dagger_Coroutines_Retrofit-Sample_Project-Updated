@@ -1,4 +1,4 @@
-package com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.data
+package com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.data.db
 
 import androidx.room.Dao
 import androidx.room.Insert

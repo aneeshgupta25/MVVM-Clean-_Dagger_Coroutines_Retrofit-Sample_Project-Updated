@@ -1,8 +1,10 @@
 package com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.data.model.artist
 
+import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "popular_artists")
 data class Artist(
 
     @PrimaryKey

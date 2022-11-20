@@ -4,13 +4,19 @@ import androidx.annotation.NonNull;
 import androidx.room.DatabaseConfiguration;
 import androidx.room.InvalidationTracker;
 import androidx.room.RoomOpenHelper;
+import androidx.room.RoomOpenHelper.Delegate;
+import androidx.room.RoomOpenHelper.ValidationResult;
 import androidx.room.migration.AutoMigrationSpec;
 import androidx.room.migration.Migration;
 import androidx.room.util.DBUtil;
 import androidx.room.util.TableInfo;
+import androidx.room.util.TableInfo.Column;
+import androidx.room.util.TableInfo.ForeignKey;
+import androidx.room.util.TableInfo.Index;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
-
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Callback;
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Configuration;
 import java.lang.Class;
 import java.lang.Override;
 import java.lang.String;
@@ -96,7 +102,7 @@ public final class TMDBDatabase_Impl extends TMDBDatabase {
         final TableInfo _infoPopularMovies = new TableInfo("popular_movies", _columnsPopularMovies, _foreignKeysPopularMovies, _indicesPopularMovies);
         final TableInfo _existingPopularMovies = TableInfo.read(_db, "popular_movies");
         if (! _infoPopularMovies.equals(_existingPopularMovies)) {
-          return new RoomOpenHelper.ValidationResult(false, "popular_movies(com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.data.model.movie.Movie).\n"
+          return new RoomOpenHelper.ValidationResult(false, "popular_movies(com.example.new_concepts.data.model.movie.Movie).\n"
                   + " Expected:\n" + _infoPopularMovies + "\n"
                   + " Found:\n" + _existingPopularMovies);
         }
@@ -111,7 +117,7 @@ public final class TMDBDatabase_Impl extends TMDBDatabase {
         final TableInfo _infoPopularTvShows = new TableInfo("popular_tvShows", _columnsPopularTvShows, _foreignKeysPopularTvShows, _indicesPopularTvShows);
         final TableInfo _existingPopularTvShows = TableInfo.read(_db, "popular_tvShows");
         if (! _infoPopularTvShows.equals(_existingPopularTvShows)) {
-          return new RoomOpenHelper.ValidationResult(false, "popular_tvShows(com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.data.model.tvshow.TvShow).\n"
+          return new RoomOpenHelper.ValidationResult(false, "popular_tvShows(com.example.new_concepts.data.model.tvshow.TvShow).\n"
                   + " Expected:\n" + _infoPopularTvShows + "\n"
                   + " Found:\n" + _existingPopularTvShows);
         }
@@ -125,7 +131,7 @@ public final class TMDBDatabase_Impl extends TMDBDatabase {
         final TableInfo _infoPopularArtists = new TableInfo("popular_artists", _columnsPopularArtists, _foreignKeysPopularArtists, _indicesPopularArtists);
         final TableInfo _existingPopularArtists = TableInfo.read(_db, "popular_artists");
         if (! _infoPopularArtists.equals(_existingPopularArtists)) {
-          return new RoomOpenHelper.ValidationResult(false, "popular_artists(com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.data.model.artist.Artist).\n"
+          return new RoomOpenHelper.ValidationResult(false, "popular_artists(com.example.new_concepts.data.model.artist.Artist).\n"
                   + " Expected:\n" + _infoPopularArtists + "\n"
                   + " Found:\n" + _existingPopularArtists);
         }

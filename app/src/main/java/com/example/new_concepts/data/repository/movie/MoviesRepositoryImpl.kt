@@ -7,7 +7,7 @@ import com.example.new_concepts.data.repository.movie.datasource.MovieLocalDataS
 import com.example.new_concepts.data.repository.movie.datasource.MovieRemoteDataSource
 import com.example.new_concepts.domain.repository.MoviesRepository
 
-class MovieRepositoryImpl(
+class MoviesRepositoryImpl(
     private val movieRemoteDataSource: MovieRemoteDataSource,
     private val movieLocalDataSource: MovieLocalDataSource,
     private val movieCacheDataSource: MovieCacheDataSource

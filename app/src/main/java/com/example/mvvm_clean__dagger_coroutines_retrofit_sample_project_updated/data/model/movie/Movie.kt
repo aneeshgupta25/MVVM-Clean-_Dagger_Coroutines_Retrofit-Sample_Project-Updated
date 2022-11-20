@@ -1,4 +1,4 @@
-package com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.data.movie
+package com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.data.model.movie
 
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName

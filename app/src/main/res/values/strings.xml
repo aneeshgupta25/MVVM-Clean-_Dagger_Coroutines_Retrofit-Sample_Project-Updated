@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">MVVM-Clean-_Dagger_Coroutines_Retrofit-Sample_Project-Updated</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">Tv Shows</string>
+    <string name="artists">Artists</string>
 </resources>

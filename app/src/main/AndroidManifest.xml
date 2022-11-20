@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MVVMClean_Dagger_Coroutines_RetrofitSample_ProjectUpdated"
         tools:targetApi="31">
         <activity
-            android:name="com.example.new_concepts.MainActivity"
+            android:name="com.example.new_concepts.presentation.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

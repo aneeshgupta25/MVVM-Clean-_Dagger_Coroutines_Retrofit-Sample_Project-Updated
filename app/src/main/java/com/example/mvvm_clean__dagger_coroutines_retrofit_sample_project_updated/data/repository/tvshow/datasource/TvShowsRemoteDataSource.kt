@@ -1,4 +1,4 @@
-package com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.data.repository.tvshow
+package com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.data.repository.tvshow.datasource
 
 import com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.data.model.tvshow.TvShowList
 import retrofit2.Response

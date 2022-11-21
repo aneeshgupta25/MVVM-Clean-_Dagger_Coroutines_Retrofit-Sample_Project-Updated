@@ -1,4 +1,4 @@
-package com.example.new_concepts.presentation.di
+package com.example.new_concepts.presentation.di.core
 
 import com.example.new_concepts.data.db.ArtistDao
 import com.example.new_concepts.data.db.MovieDao

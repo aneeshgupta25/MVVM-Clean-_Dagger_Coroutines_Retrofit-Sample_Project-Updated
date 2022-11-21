@@ -1,4 +1,4 @@
-package com.example.new_concepts.presentation.di
+package com.example.new_concepts.presentation.di.core
 
 import android.content.Context
 import androidx.room.Room

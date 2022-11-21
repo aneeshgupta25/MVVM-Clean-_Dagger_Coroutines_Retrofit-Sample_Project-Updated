@@ -1,4 +1,4 @@
-package com.example.new_concepts.presentation.di
+package com.example.new_concepts.presentation.di.core
 
 import com.example.new_concepts.data.repository.artist.datasource.ArtistCacheDataSource
 import com.example.new_concepts.data.repository.artist.datasourceimpl.ArtistCacheDataSourceImpl

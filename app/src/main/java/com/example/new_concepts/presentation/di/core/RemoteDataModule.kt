@@ -1,4 +1,4 @@
-package com.example.new_concepts.presentation.di
+package com.example.new_concepts.presentation.di.core
 
 import com.example.new_concepts.data.api.TMDBService
 import com.example.new_concepts.data.repository.artist.datasource.ArtistRemoteDataSource

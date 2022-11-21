@@ -12,23 +12,23 @@ import dagger.Provides
 import javax.inject.Singleton
 
 @Module
-class RemoteDataModule(private val tmdbService: TMDBService, private val apiKey : String) {
+class RemoteDataModule(private val apiKey : String) {
 
     @Singleton
     @Provides
-    fun provideMovieRemoteDataSource() : MovieRemoteDataSource {
+    fun provideMovieRemoteDataSource(tmdbService: TMDBService) : MovieRemoteDataSource {
         return MovieRemoteDataSourceImpl(tmdbService = tmdbService, apiKey = apiKey)
     }
 
     @Singleton
     @Provides
-    fun provideArtistRemoteDataSource() : ArtistRemoteDataSource {
+    fun provideArtistRemoteDataSource(tmdbService : TMDBService) : ArtistRemoteDataSource {
         return ArtistRemoteDataSourceImpl(tmdbService = tmdbService, apiKey = apiKey)
     }
 
     @Singleton
     @Provides
-    fun provideTvShowRemoteDataSource() : TvShowsRemoteDataSource {
+    fun provideTvShowRemoteDataSource(tmdbService: TMDBService) : TvShowsRemoteDataSource {
         return TvShowRemoteDataSourceImpl(tmdbService = tmdbService, apiKey = apiKey)
     }
 

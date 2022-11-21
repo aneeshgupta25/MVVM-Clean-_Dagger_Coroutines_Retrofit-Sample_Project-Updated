@@ -6,6 +6,9 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.R
 import com.example.mvvm_clean__dagger_coroutines_retrofit_sample_project_updated.databinding.ActivityHomeBinding
+import com.example.new_concepts.presentation.artist.ArtistActivity
+import com.example.new_concepts.presentation.movie.MovieActivity
+import com.example.new_concepts.presentation.tvshow.TvShowActivity
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding

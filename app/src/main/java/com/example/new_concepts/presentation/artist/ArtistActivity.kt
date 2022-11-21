@@ -1,4 +1,4 @@
-package com.example.new_concepts.presentation
+package com.example.new_concepts.presentation.artist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

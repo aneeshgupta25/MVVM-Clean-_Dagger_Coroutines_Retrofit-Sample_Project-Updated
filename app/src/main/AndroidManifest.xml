@@ -13,21 +13,21 @@
         android:theme="@style/Theme.MVVMClean_Dagger_Coroutines_RetrofitSample_ProjectUpdated"
         tools:targetApi="31">
         <activity
-            android:name="com.example.new_concepts.presentation.TvShowActivity"
+            android:name="com.example.new_concepts.presentation.tvshow.TvShowActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.new_concepts.presentation.ArtistActivity"
+            android:name="com.example.new_concepts.presentation.artist.ArtistActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.new_concepts.presentation.MovieActivity"
+            android:name="com.example.new_concepts.presentation.movie.MovieActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

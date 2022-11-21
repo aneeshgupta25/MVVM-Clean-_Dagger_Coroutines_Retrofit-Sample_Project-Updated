@@ -11,12 +11,12 @@ class ArtistViewModel(
 ) : ViewModel() {
 
     //coroutine will call execute() of useCase from UI thread
-    fun getMovies() = liveData {
+    fun getArtists() = liveData {
         val artistList = getArtistsUseCase.execute()
         emit(artistList)
     }
 
-    fun updateMovies() = liveData {
+    fun updateArtists() = liveData {
         val updatedList = updateArtistsUseCase.execute()
         emit(updatedList)
     }
